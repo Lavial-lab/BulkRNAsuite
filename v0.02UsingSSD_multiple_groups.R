@@ -37,8 +37,8 @@ bbduk.sh <- 'bbduk.sh '
 fastqc_powershell <- "fastqc -t 12 "
 
 credentials <- data.frame(
-  user = c("shiny", "shinymanager", "emma", 'fabrice', 'aurelia','emile','maeva','aneta','elodie','manon','cedric','yann','theo'), # mandatory
-  password = c("flaviallab", "flavial", "emma", 'fabrice','aurelia','emile','maeva','aneta','elodie','manon','cedric','yann','theo'), # mandatory
+  user = c("shiny", "shinymanager", "margo", 'fabrice', 'aurelia','emile','maeva','imene','elodie','manon','yann', 'dasha', 'marie'), # mandatory
+  password = c("flaviallab", "flavial", "margo", 'fabrice','aurelia','emile','maeva','imene','elodie','manon','yann', 'dasha', 'marie'), # mandatory
   #start = c("2019-04-15"), # optinal (all others)
   expire = c(rep(NA, 13)),
   admin = c(rep(NA, 13)),
