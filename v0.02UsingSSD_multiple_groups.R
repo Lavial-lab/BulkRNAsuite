@@ -1587,7 +1587,7 @@ server <- function(input, output, session){
     #reff <- matr$Group[which(colDat[,3])]
     #print(reff)
     if(length(which(colDat[,3]))>0) matr$Group <- relevel(x = matr$Group, ref = reff)
-    smallestGroupSize <- floor(nrow(colDat))
+    smallestGroupSize <- floor(min(table(matr$Group)))
     keep <- rowSums(counts(matr) >= 10) >= smallestGroupSize
     matr <- matr[keep,]
     toRet <- DESeq2::DESeq(matr)
